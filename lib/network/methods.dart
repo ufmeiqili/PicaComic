@@ -116,6 +116,7 @@ class Network{
         message = jsonResponse["message"];
         return null;
       }else if(res.statusCode == 401){
+        print(res.data);
         appdata.settings[13] = "0";
         appdata.writeData();
         Get.offAll(const LoginPage());
@@ -143,7 +144,9 @@ class Network{
 
   Future<bool> login(String email, String password) async {
     //登录
-    var api = appdata.settings[3] == "1"?"https://api.kokoiro.xyz/picaapi":"https://picaapi.picacomic.com";
+    var api = "https://api.kokoiro.xyz/picaapi";
+    appdata.token = "";
+    token = "";
     var res = await post('$api/auth/sign-in',{
       "email":email,
       "password":password,

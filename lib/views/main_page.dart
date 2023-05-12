@@ -159,10 +159,8 @@ class _MainPageState extends State<MainPage> {
         content: RichText(
           text: TextSpan(children: [
             TextSpan(text: "感谢使用本软件, 请注意:\n\n",style: TextStyle(color: Theme.of(context).colorScheme.onSurface)),
-            TextSpan(text: "本App的开发目的仅为学习交流与个人兴趣, 不接受任何形式捐赠, 无任何获利\n\n",style: TextStyle(color: Theme.of(context).colorScheme.onSurface)),
-            TextSpan(text: "请尽可能使用官方App, 如您坚持使用本App, 您可以点击分类中的",style: TextStyle(color: Theme.of(context).colorScheme.onSurface)),
-            TextSpan(text: "援助哔咔",style: TextStyle(fontWeight: FontWeight.w600,color: Theme.of(context).colorScheme.onSurface)),
-            TextSpan(text: ", 为官方运营出力\n",style: TextStyle(color: Theme.of(context).colorScheme.onSurface)),
+            TextSpan(text: "本App的开发目的仅为学习交流与个人兴趣, 无任何获利\n\n",style: TextStyle(color: Theme.of(context).colorScheme.onSurface)),
+            TextSpan(text: "本项目与Picacg无任何联系",style: TextStyle(color: Theme.of(context).colorScheme.onSurface)),
           ]),
         ),
         actions: [
