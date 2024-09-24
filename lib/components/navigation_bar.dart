@@ -618,9 +618,16 @@ class _NaviPopScope extends StatelessWidget {
         ? child
         : PopScope(
             canPop: App.isAndroid ? false : true,
+            // flutter <3.24.0 api
+            onPopInvoked: (value) {
+              action();
+            },
+            /*
+            flutter >=3.24.0 api
             onPopInvokedWithResult: (value, result) {
               action();
             },
+            */
             child: child,
           );
     if (popGesture) {

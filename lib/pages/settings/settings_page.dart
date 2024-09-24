@@ -14,15 +14,17 @@ import 'package:flutter_reorderable_grid_view/widgets/reorderable_builder.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:pica_comic/base.dart';
 import 'package:pica_comic/comic_source/built_in/picacg.dart';
+import 'package:pica_comic/components/components.dart';
 import 'package:pica_comic/foundation/cache_manager.dart';
 import 'package:pica_comic/foundation/ui_mode.dart';
 import 'package:pica_comic/main.dart';
 import 'package:pica_comic/network/app_dio.dart';
-import 'package:pica_comic/components/components.dart';
 import 'package:pica_comic/pages/logs_page.dart';
 import 'package:pica_comic/tools/extensions.dart';
 import 'package:pica_comic/tools/io_tools.dart';
+import 'package:pica_comic/tools/translations.dart';
 import 'package:url_launcher/url_launcher_string.dart';
+
 import '../../comic_source/comic_source.dart';
 import '../../foundation/app.dart';
 import '../../foundation/local_favorites.dart';
@@ -36,21 +38,20 @@ import '../../network/webdav.dart';
 import '../../tools/background_service.dart';
 import '../../tools/debug.dart';
 import '../welcome_page.dart';
-import 'package:pica_comic/tools/translations.dart';
 
-part "reading_settings.dart";
-part "picacg_settings.dart";
-part "network_setting.dart";
-part "multi_pages_filter.dart";
-part "local_favorite_settings.dart";
-part "jm_settings.dart";
-part "ht_settings.dart";
-part "explore_settings.dart";
-part "eh_settings.dart";
-part "comic_source_settings.dart";
-part "blocking_keyword_page.dart";
 part "app_settings.dart";
+part "blocking_keyword_page.dart";
+part "comic_source_settings.dart";
 part 'components.dart';
+part "eh_settings.dart";
+part "explore_settings.dart";
+part "ht_settings.dart";
+part "jm_settings.dart";
+part "local_favorite_settings.dart";
+part "multi_pages_filter.dart";
+part "network_setting.dart";
+part "picacg_settings.dart";
+part "reading_settings.dart";
 
 class SettingsPage extends StatefulWidget {
   static void open([int initialPage = -1]) {
@@ -686,6 +687,9 @@ class _SettingsPageState extends State<SettingsPage> implements PopEntry{
   @override
   ValueListenable<bool> get canPopNotifier => canPop;
 
+  /*
+  flutter >=3.24.0 api
+
   @override
   void onPopInvokedWithResult(bool didPop, result) {
     if (currentPage != -1) {
@@ -703,4 +707,15 @@ class _SettingsPageState extends State<SettingsPage> implements PopEntry{
       });
     }
   }
+  */
+
+  // flutter <3.24.0 api
+  @override
+  PopInvokedCallback? get onPopInvoked => (bool didPop) {
+    if (currentPage != -1) {
+      setState(() {
+        currentPage = -1;
+      });
+    }
+  };
 }
