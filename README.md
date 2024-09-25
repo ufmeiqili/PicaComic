@@ -75,12 +75,11 @@ The Chinese translation of the manga tags is from this project.
 ## 📸 Screenshots
 
 ### Desktop
-<img src="screenshots/9.png" style="width: 500px">
-<img src="screenshots/10.png" style="width: 500px">
+<img src="screenshots/9.png" style="width: 758px">
+<img src="screenshots/10.png" style="width: 758px">
 
 ### Mobile
-<img src="screenshots/1.png" style="width: 250px"><img src="screenshots/2.png" style="width: 250px">
-<img src="screenshots/3.png" style="width: 250px"><img src="screenshots/4.png" style="width: 250px">
-<img src="screenshots/5.png" style="width: 250px"><img src="screenshots/6.png" style="width: 250px">
+<img src="screenshots/1.png" style="width: 250px"> <img src="screenshots/2.png" style="width: 250px"> <img src="screenshots/3.png" style="width: 250px">
+<img src="screenshots/4.png" style="width: 250px"> <img src="screenshots/5.png" style="width: 250px"> <img src="screenshots/6.png" style="width: 250px">
 <img src="screenshots/7.png" style="width: 250px">
 
