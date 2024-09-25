@@ -5,53 +5,64 @@
 [![Download](https://img.shields.io/github/v/release/wgh136/PicaComic)](https://github.com/wgh136/PicaComic/releases)
 [![stars](https://img.shields.io/github/stars/wgh136/PicaComic)](https://github.com/wgh136/PicaComic/stargazers)
 
-A comic app with multiple sources built with flutter.
+## 🙋 Introduction
+Welcome to ***Pica Comic***, an app that provides a centralized platform of comics from multiple sources, built using Flutter. 
 
-## How to use
+- [Features](#-features)
+- [Comic Sources](#-comic-sources)
+- [Installation](#-installation)
+- [History](#-history)
+- [Build From Source Code](#-build-from-source-code)
+- [Credits](#-credits)
+- [Screenshots](#-screenshots)
+
+## 🔥 Features
+
+- Browse manga
+- Online reading
+- Download manga for offline reading
+- Manage local & network favorites
+- Data sync (using webdav)
+- Reading history
+- App interface customization
+
+## 📖 Comic Sources
+
+### Built-in
+
+Currently, Pica Comic has 6 built-in comic sources:
+- Picacg
+- E-hentai/exhentai
+- Jmcomic
+- Hitomi
+- 绅士漫画
+- Nhentai
+
+### Custom
+
+As of **version 3.0.0**, custom comic sources can be added to the app.
+
+## 💻 Installation
 
 1. Clone the repository
 ```shell
 git clone https://github.com/wgh136/PicaComic
 ```
-2. Install flutter: https://docs.flutter.dev/get-started/install
+2. Install Flutter: https://docs.flutter.dev/get-started/install
 3. Build Application: https://docs.flutter.dev/deployment
 
-## Introduction
+## 🤔 History
 
-### Built-in Comic Source
+This project initially started as an unofficial app for Picacg 
+and later evolved into a separate app that supports multiple comic sources.
 
-Currently, Pica Comic has 5 built-in comic sources:
-- picacg
-- e-hentai/exhentai
-- jmcomic
-- hitomi
-- 绅士漫画
-- nhentai
-
-### Custom Comic Source
-
-You can add custom comic sources in the app after version 3.0.0.
-
-### Features
-
-- Browse manga
-- Online reading
-- Download manga
-- Manage local favorites and network favorites
-- Data sync(using webdav)
-- Reading history
-
-### History
-
-This project initially started as an unofficial app for picacg 
-and later evolved into an app that supports multiple comic sources.
-
-## Build From Source Code
+## 🔨 Build From Source Code
 See [https://docs.flutter.dev/](https://docs.flutter.dev/)
 
-## Thanks
+## ❤️ Credits
+Special thanks to the following resources that were used in the development of Pica Comic. 
 
-### Projects
+### Image Display
 [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=tonquer&repo=JMComic-qt)](https://github.com/tonquer/JMComic-qt)
 
 The image restructuring algorithm used to display jm images is from this project.
@@ -61,9 +72,18 @@ The image restructuring algorithm used to display jm images is from this project
 
 The Chinese translation of the manga tags is from this project.
 
-## Screenshots
+## 📸 Screenshots
 
-<img src="screenshots/9.png" style="width: 400px"><img src="screenshots/10.png" style="width: 400px">
+### Desktop
+<img src="screenshots/9.png" style="width: 400px">
+<img src="screenshots/10.png" style="width: 400px">
 
-<img src="screenshots/1.png" style="width: 400px"><img src="screenshots/2.png" style="width: 400px"><img src="screenshots/3.png" style="width: 400px"><img src="screenshots/4.png" style="width: 400px"><img src="screenshots/5.png" style="width: 400px"><img src="screenshots/6.png" style="width: 400px"><img src="screenshots/7.png" style="width: 400px">
+### Mobile
+<img src="screenshots/1.png" style="width: 250px">
+<img src="screenshots/2.png" style="width: 250px">
+<img src="screenshots/3.png" style="width: 250px">
+<img src="screenshots/4.png" style="width: 250px">
+<img src="screenshots/5.png" style="width: 250px">
+<img src="screenshots/6.png" style="width: 250px">
+<img src="screenshots/7.png" style="width: 250px">
 
